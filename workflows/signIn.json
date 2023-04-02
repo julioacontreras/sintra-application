@@ -1,0 +1,121 @@
+{
+  "title": "Login minimalist",
+  "description": "A minalist authenticacion login",
+  "commands": [
+    {
+      "id": "endpont",
+      "title": "Receive credentials",
+      "command": "endpoint",
+      "parameters": {
+        "dev": {
+          "route": "/api/v1/signin",
+          "method": "POST"
+        }
+      },
+      "input": {
+        "dataReceived": "{{$.body}}"
+      },
+      "outputs": {
+        "default": {
+          "sendToIds": ["check-credentials"],
+          "result": "{{$}}"
+        }
+      }
+    },
+    {
+      "id": "check-credentials",
+      "title": "Check credentials",
+      "command": "api",
+      "parameters": {
+        "dev": {
+          "url": "http://localhost:4000/api/auth/signin",
+          "method": "POST"
+        }
+      },
+      "input": {
+        "dataReceived": "{{$}}"
+      },
+      "outputs": {
+        "default": {
+          "sendToIds": ["check-result-is-okay"],
+          "result": "{{$}}"
+        }
+      }
+    },
+    {
+      "id": "check-result-is-okay",
+      "title": "check result is okay",
+      "command": "if",
+      "parameters": {
+        "firstCompare": "{{$.status}}",
+        "operator": "===",
+        "secondCompare": "401"
+      },
+      "input": {
+        "dataReceived": "{{$}}"
+      },
+      "outputs": {
+        "ok": {
+          "sendToIds": ["create-session"],
+          "result": "{{$}}"
+        },
+        "ko": {
+          "sendToIds": ["respond-error"],
+          "result": "{{$}}"
+        }
+      }
+    },
+    {
+      "id": "create-session",
+      "title": "Create session",
+      "command": "api",
+      "parameters": {
+        "dev": {
+          "url": "http://localhost:4030/v1/fastdata/user-{{$.id}}",
+          "method": "POST",
+          "body": {
+            "token": "{{$.token}}",
+            "id": "{{$.id}}",
+            "createdAt": "{{epochTime}}"
+          }
+        }
+      },
+      "input": {
+        "dataReceived": "{{$}}"
+      },
+      "outputs": {
+        "default": {
+          "sendToIds": ["respond-okay"],
+          "result": "{ token: {{$.token}} }"
+        }
+      }
+    },
+    {
+      "id": "respond-okay",
+      "title": "Respond okay",
+      "command": "response",
+      "parameters": {},
+      "input": {
+        "dataReceived": "{{$}}"
+      },
+      "outputs": {
+        "default": {
+          "result": "{{$}}"
+        }
+      }
+    },
+    {
+      "id": "respond-error",
+      "title": "Respond error",
+      "command": "response",
+      "parameters": {},
+      "input": {},
+      "outputs": {
+        "default": {
+          "sendToIds": [],
+          "result": "{ \"code\": \"00001\", \"message\": \"Is not possible authenticate\" }"
+        }
+      }
+    }
+  ]
+}

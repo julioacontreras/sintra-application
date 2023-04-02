@@ -25,6 +25,7 @@
     "@types/body-parser": "^1.19.2",
     "@types/cors": "^2.8.12",
     "@types/jest": "^27.5.2",
+    "@types/jsonpath": "^0.2.0",
     "@types/node": "^18.15.11",
     "@typescript-eslint/eslint-plugin": "^5.54.0",
     "@typescript-eslint/parser": "^5.54.0",
@@ -40,10 +41,12 @@
   "dependencies": {
     "@fastify/compress": "^6.2.0",
     "@fastify/helmet": "^10.1.0",
+    "axios": "^1.3.4",
     "dotenv": "^16.0.1",
     "fastify": "^4.12.0",
     "fs": "0.0.1-security",
     "http-status": "^1.5.2",
+    "jsonpath": "^1.1.1",
     "npm": "^9.2.0",
     "util": "^0.12.5",
     "winston": "^3.8.2"

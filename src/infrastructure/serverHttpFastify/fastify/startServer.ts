@@ -1,7 +1,6 @@
 import fastify from 'fastify'
-
-import { UseCaseMap } from '@/adapters/serverHTTP/types'
-import { logger } from '@/adapters/logger'
+import { UseCaseMap } from '../../../adapters/serverHTTP/types'
+import { logger } from '../../../adapters/logger'
 
 import { createUseCases } from './createUseCases'
 
@@ -23,7 +22,7 @@ export async function startServer (useCases: UseCaseMap): Promise<void> {
   // -------------------------
   //   start server
   // -------------------------
-  const port = process.env.PORT
+  const port = process.env.APPLICATION_SERVICE_PORT
   if (!port) {
     throw 'Dont have port selected in server'
   }

@@ -1,9 +1,9 @@
 import { FastifyInstance } from 'fastify'
 
-import { UseCaseRoute, UseCaseMap, UseCaseFunction } from '@/adapters/serverHTTP/types'
+import { UseCaseRoute, UseCaseMap, UseCaseFunction } from '../../../adapters/serverHTTP/types'
 
 
-function useHandler(useCaseExecute: UseCaseFunction, useCaseName: string) {
+function useHandler (useCaseExecute: UseCaseFunction, useCaseName: string) {
   async function handler (request: any, reply: any) {
     if (!useCaseExecute) {
       return reply
