@@ -1,5 +1,8 @@
 {
-    "collection": [
-        "signIn.json"
-    ]
+  "collection": [
+    {
+      "id": "signIn",
+      "filename": "signIn.json"
+    }
+  ]
 }

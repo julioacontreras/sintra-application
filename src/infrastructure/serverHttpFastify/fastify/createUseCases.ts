@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { FastifyInstance } from 'fastify'
 
 import { UseCaseRoute, UseCaseMap, UseCaseFunction } from '../../../adapters/serverHTTP/types'

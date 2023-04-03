@@ -1,5 +1,6 @@
 # ignore dependencies
 node_modules/
+front/node_modules/
 
 # ignore distribution
 dist/
