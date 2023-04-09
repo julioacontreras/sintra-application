@@ -18,7 +18,6 @@ export default function handler (
   }
 
   if (!isLoaded) {
-    console.log('not loaded')
     res.status(200).json({ error: 'not loaded' })
   }
 }

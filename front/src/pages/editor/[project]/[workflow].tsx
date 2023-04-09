@@ -26,7 +26,6 @@ export default function EditorPage() {
       const data = await response.json()
       setData(data)
       setIsLoading(false)
-      console.log('setIsLoading = false')
     }
     if (project && workflow) {
       fetchData()
@@ -35,7 +34,9 @@ export default function EditorPage() {
 
   return <div style={{ width: '100vw', height: '100vh' }}>
       {!isLoading ? 
-        <Editor workflow={ data } /> : 
+        <>
+          <Editor workflow={ data } /> 
+        </> :
         <>Loading...</> }    
     </div>
 }

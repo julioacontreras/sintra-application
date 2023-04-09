@@ -1,0 +1,28 @@
+.shadow {
+  position: absolute;
+  opacity: 0.6;
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+
+.formulary {
+  position: absolute;
+  background-color: white;
+  width: 90vw;
+  height: 70vh;
+  z-index: 2;
+  border-radius: 1rem;
+  padding: 0.9rem;
+}
+
+.mainFormulary {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}

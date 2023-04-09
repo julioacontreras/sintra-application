@@ -8,6 +8,7 @@ export type Command = {
   input: {
     dataReceived: string
   }
-  outputs: object
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  outputs: any
   run: (data: object) => Promise<ReturnRun>
 }
