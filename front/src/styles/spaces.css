@@ -1,0 +1,13 @@
+:root {
+    /* Padding, margin and gap */
+    --space-2xs: 0.25rem;
+    --space-xs: 0.5rem;
+    --space-s: 0.75rem;
+    --space: 1rem;
+    --space-md: 1rem;
+    --space-l: 1.5rem;
+    --space-xl: 5rem;
+
+    --full-width: 100vw;
+    --full-height: 100vh;
+}

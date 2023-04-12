@@ -1,0 +1,6 @@
+
+.canvas {
+  background-color: var(--white);
+  width: var(--full-width);
+  height: var(--full-height);
+}

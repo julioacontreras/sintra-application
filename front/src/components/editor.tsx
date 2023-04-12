@@ -1,10 +1,14 @@
 
+import { useState } from 'react'
+
 import { startEditor } from '@/business/editor/application/startEditor'
 import { Workflow } from '@/business/workflow/domain/workflow'
+
 import Formularies from '@/components/formularies'
 import Nodes from '@/components/nodes'
 import Edges from '@/components/edges'
-import { useState } from 'react'
+
+import style from '@/styles/editor.module.css'
 
 export type EditorProps = {
   workflow: Workflow | null 
@@ -24,7 +28,7 @@ export default function Editor(props: EditorProps) {
         commandId={ commandId }
         setCommandId={ setCommandId }
       ></Formularies>      
-      <svg xmlns="http://www.w3.org/2000/svg" width="100vw" height="100vh" viewBox={ `50 0 300 450` }>
+      <svg xmlns="http://www.w3.org/2000/svg" className={style.canvas} viewBox={ `50 0 300 450` }>
         <defs>
             <filter id="dropShadow" x="0" y="0" width="200%" height="200%">
                 <feOffset result="offOut" in="SourceGraphic" dx="2" dy="2" />

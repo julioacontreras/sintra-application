@@ -1,26 +1,15 @@
-.shadow {
+.screenShadow {
   position: absolute;
-  opacity: 0.6;
+  opacity: var(--opacity-60);
   background-color: black;
-  width: 100vw;
-  height: 100vh;
-  z-index: 1;
+  width: var(--full-width);
+  height: var(--full-height);
+  z-index: var(--level-1);
   top: 0;
   left: 0;
 }
 
-
-.formulary {
-  position: absolute;
-  background-color: white;
-  width: 90vw;
-  height: 70vh;
-  z-index: 2;
-  border-radius: 1rem;
-  padding: 0.9rem;
-}
-
-.mainFormulary {
+.container {
   position: relative;
   display: flex;
   justify-content: center;

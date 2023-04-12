@@ -1,0 +1,50 @@
+.title { 
+  font-size: var(--font-size-l);
+  color: var(--black);
+}
+
+.formulary {
+  position: absolute;
+  background-color: var(--white);
+  max-width: 400px;
+  min-width: 200px;
+  width: 90vw;
+  height: auto;
+  z-index: var(--level-2);
+  border-radius: var(--radius);
+  padding: var(--space);
+}
+
+.id {
+  font-size: var(--font-size);
+  color: var(--gray-light);
+}
+
+.parameter {
+  font-size: var(--font-size);
+  padding-bottom: var(--space-xs);
+  color:black;
+}
+
+.content {
+  padding-top: var(--space-xs);;
+}
+
+.property {
+  font-size: var(--font-size);
+  color:black;
+  padding-left: var(--space-xs);
+  padding-bottom: var(--space-2xs);
+}
+
+.value input {
+  border: 1px solid black;
+  border-radius: var(--radius);
+  padding: 10px;
+  width: 100%;
+}
+
+.value {
+  padding-left: var(--space-xs);
+  padding-bottom: var(--space-xs);
+}

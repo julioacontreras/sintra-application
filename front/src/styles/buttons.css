@@ -1,0 +1,80 @@
+:root {
+  --btn-width-small: 5rem;
+}
+
+.group-btn {
+  display: flex;
+  gap: var(--space-2xs);
+  flex-direction: row;
+  justify-content: end;
+  padding-top: var(--space);
+}
+
+.btn {
+  appearance: none;
+  border-radius: var(--radius);
+  box-shadow: none;
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  display: inline-block;
+  font-size: var(--font-size-s);
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+}
+
+/**
+*
+* Button primary
+*
+*/
+
+.btn-primary {
+  border: 0px none;
+  background-color: var(--success);
+  color: var(--white);
+  min-width: var(--btn-width-small);
+}
+
+.btn-primary:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+
+.btn-primary:hover {
+  background-color: var(--success-dark);
+}
+
+.btn-primary:disabled {
+  background-color: var(--success-light);
+  color: var(--white-opacity-80);
+  cursor: default;
+}
+
+.btn-primary:active {
+  background-color: var(--success-dark);
+}
+
+/**
+*
+* Button secondary
+*
+*/
+
+.btn-default {
+  background-color: var(--white);
+  color: var(--black);
+  border: 1px solid var(--black);
+  min-width: var(--btn-width-small);
+}
+
+.btn-default:hover {
+  color: var(--gray);
+}
