@@ -1,0 +1,24 @@
+.parameter {
+  font-size: var(--font-size);
+  padding-bottom: var(--space-xs);
+  color:black;
+}
+
+.property {
+  font-size: var(--font-size-xs);
+  color:black;
+  padding-left: var(--space-xs);
+  padding-bottom: var(--space-2xs);
+}
+
+.value {
+  padding-left: var(--space-xs);
+  padding-bottom: var(--space-xs);
+}
+
+.value input {
+  border: 1px solid black;
+  border-radius: var(--radius);
+  padding: 10px;
+  width: 100%;
+}

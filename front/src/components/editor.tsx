@@ -15,6 +15,11 @@ export type EditorProps = {
 }
 
 export default function Editor(props: EditorProps) {
+  function save(workflow: Workflow) {
+    console.log(workflow)
+  }
+
+
   const [commandId, setCommandId] = useState('')
   if (props.workflow) {
     const {
@@ -27,6 +32,7 @@ export default function Editor(props: EditorProps) {
         workflow={ props.workflow }
         commandId={ commandId }
         setCommandId={ setCommandId }
+        onSave={ save }
       ></Formularies>      
       <svg xmlns="http://www.w3.org/2000/svg" className={style.canvas} viewBox={ `50 0 300 450` }>
         <defs>

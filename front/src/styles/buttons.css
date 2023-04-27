@@ -5,8 +5,7 @@
 .group-btn {
   display: flex;
   gap: var(--space-2xs);
-  flex-direction: row;
-  justify-content: end;
+  justify-content: flex-end;
   padding-top: var(--space);
 }
 

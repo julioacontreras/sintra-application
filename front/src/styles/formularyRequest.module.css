@@ -20,31 +20,6 @@
   color: var(--gray-light);
 }
 
-.parameter {
-  font-size: var(--font-size);
-  padding-bottom: var(--space-xs);
-  color:black;
-}
-
 .content {
-  padding-top: var(--space-xs);;
-}
-
-.property {
-  font-size: var(--font-size);
-  color:black;
-  padding-left: var(--space-xs);
-  padding-bottom: var(--space-2xs);
-}
-
-.value input {
-  border: 1px solid black;
-  border-radius: var(--radius);
-  padding: 10px;
-  width: 100%;
-}
-
-.value {
-  padding-left: var(--space-xs);
-  padding-bottom: var(--space-xs);
+  padding-top: var(--space-lg);
 }
