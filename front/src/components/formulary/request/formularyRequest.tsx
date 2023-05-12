@@ -1,6 +1,6 @@
-import { Command } from '@/business/workflow/domain/command'
-import { Workflow } from '@/business/workflow/domain/workflow'
-import { getDimensions } from '@/business/editor/domain/events/getDimensions'
+import { Command } from '@/ddd/workflow/domain/command'
+import { Workflow } from '@/ddd/workflow/domain/workflow'
+import { getDimensions } from '@/ddd/editor/domain/events/getDimensions'
 
 import style from '@/styles/formularyRequest.module.css'
 import { RequestParameter } from './requestParameter'
