@@ -1,6 +1,6 @@
 
 
-import { EdgeGraph } from "@/business/editor/domain/types/edgeGraph";
+import { EdgeGraph } from "@/ddd/editor/domain/types/edgeGraph";
 import Edge from "./edge";
 
 export type EdgesProps = {

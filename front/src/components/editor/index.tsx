@@ -1,12 +1,12 @@
 
 import { useState } from 'react'
 
-import { startEditor } from '@/business/editor/application/startEditor'
-import { Workflow } from '@/business/workflow/domain/workflow'
+import { startEditor } from '@/ddd/editor/useCase/startEditor'
+import { Workflow } from '@/ddd/workflow/domain/workflow'
 
 import Formularies from '@/components/formularies'
-import Nodes from '@/components/nodes'
-import Edges from '@/components/edges'
+import Nodes from '@/components/editor/nodes'
+import Edges from '@/components/editor/edges'
 
 import style from '@/styles/editor.module.css'
 

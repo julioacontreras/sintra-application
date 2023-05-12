@@ -1,7 +1,7 @@
 
 
-import { spaceVeriticalBetweenComponents } from "@/business/editor/domain/constants";
-import { EdgeGraph } from "@/business/editor/domain/types/edgeGraph";
+import { spaceVeriticalBetweenComponents } from "@/ddd/editor/domain/constants";
+import { EdgeGraph } from "@/ddd/editor/domain/types/edgeGraph";
 
 export type EdgeProps = {
   edgeGraph: EdgeGraph

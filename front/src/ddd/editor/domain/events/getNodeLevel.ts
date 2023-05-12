@@ -1,4 +1,4 @@
-import { Command } from '@/business/workflow/domain/command'
+import { Command } from '@/ddd/workflow/domain/command'
 
 export type Level = {
   x: number, 

@@ -1,4 +1,4 @@
-import IconWorld from '../icon/world';
+import IconWorld from '@/components/icon/world';
 import { NodeProps } from './nodeProps'
 
 export default function RequestNode(props: NodeProps) {

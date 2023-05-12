@@ -1,5 +1,5 @@
 import { NodeProps } from './nodeProps'
-import IconArrows from '../icon/arrows';
+import IconArrows from '@/components/icon/arrows';
 
 export default function IfNode(props: NodeProps) {
   function onClick () {

@@ -1,4 +1,4 @@
-import { Workflow } from '@/business/workflow/domain/workflow'
+import { Workflow } from '@/ddd/workflow/domain/workflow'
 import { getNodes } from '../domain/events/getNodes'
 import { getEdges } from '../domain/events/getEdges'
   

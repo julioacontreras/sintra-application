@@ -44,7 +44,7 @@
     },
     {
       "id": "check-result-is-okay",
-      "title": "check result is okay",
+      "title": "Check result is okay",
       "command": "if",
       "parameters": {
         "firstCompare": "{{$.status}}",

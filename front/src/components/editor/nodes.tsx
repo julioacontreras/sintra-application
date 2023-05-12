@@ -1,8 +1,8 @@
-import { NodeGraph } from '@/business/editor/domain/types/nodeGraph';
-import RequestNode from '@/components/node/requestNode'
-import ResponseNode from '@/components/node/responseNode'
-import ApiNode from '@/components/node/apiNode'
-import IfNode from '@/components/node/ifNode'
+import { NodeGraph } from '@/ddd/editor/domain/types/nodeGraph';
+import RequestNode from '@/components/editor/node/requestNode'
+import ResponseNode from '@/components/editor/node/responseNode'
+import ApiNode from '@/components/editor/node/apiNode'
+import IfNode from '@/components/editor/node/ifNode'
 
 export type NodesProps = {
     nodes: NodeGraph[]

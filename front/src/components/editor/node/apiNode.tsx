@@ -1,4 +1,4 @@
-import IconApi from '../icon/api';
+import IconApi from '@/components/icon/api';
 import { NodeProps } from './nodeProps'
 
 export default function ApiNode(props: NodeProps) {

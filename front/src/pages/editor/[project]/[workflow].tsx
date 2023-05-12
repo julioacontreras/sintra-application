@@ -2,8 +2,8 @@ import { useRouter } from 'next/router'
 import { useState, useEffect } from 'react'
 
 import Editor from '../../../components/editor'
-import { useFetchWorkflow } from '@/business/editor/domain/events/fetchWorkflow'
-import { Workflow } from '@/business/workflow/domain/workflow'
+import { useFetchWorkflow } from '@/ddd/editor/domain/events/fetchWorkflow'
+import { Workflow } from '@/ddd/workflow/domain/workflow'
 
 export default function EditorPage() {
   const router = useRouter()
